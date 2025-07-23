@@ -14,6 +14,7 @@ Cursor is a code editor that is built for AI. It is a modern code editor that is
 - [ ] Using @ for context
 - [ ] Review AI related changes. "Prompt AI to build a feature and show users how to review the changes/diff."
 - [ ] Sliding Context window. Start new chats for each topic. It speeds up the AI response
+- [ ] Rules: Define custom instructions for Agent behavior. Rules help maintain coding standards, enforce patterns, and personalize how Agent assists with your project
 
 
 ## Exercises

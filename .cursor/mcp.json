@@ -18,6 +18,22 @@
         "/local-directory:/local-directory",
         "mcp/git@sha256:ad6af958e79466a14b895891e772fdda28fdc12c06fff4a70637b66773303a2c"
       ]
+    },
+
+    "postgres": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "POSTGRES_URL",
+        "mcp/postgres",
+        "$POSTGRES_URL"
+      ],
+      "env": {
+        "POSTGRES_URL": "postgresql://user:password@localhost:5432/mydb"
+      }
     }
   }
 }
