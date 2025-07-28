@@ -1,0 +1,8 @@
+services:
+  agent:
+    build: .
+    models:
+      - llm
+models:
+  llm:
+    model: ai/smollm2
