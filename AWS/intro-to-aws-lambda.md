@@ -102,10 +102,32 @@ By the end of this course, participants will:
     - Custom runtimes using Lambda Runtime API
 
 - **Lambda Limits and Quotas**
+
   - Maximum execution time: 15 minutes
   - Memory allocation: 128 MB to 10,008 MB
   - Deployment package size: 50 MB (zipped), 250 MB (unzipped)
   - Concurrent executions: 1,000 (default, can be increased)
+
+- **Lambda Execution Environment Lifecycle**
+  <!-- https://trackit.io/aws-lambda-lifecycle/ -->
+  <!-- https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html -->
+  - Init Phase: Initializes the environment
+    - The goal of the init phase is to prepare the environment for the function to run.
+    - The initialization phase is split into three sub-phases:
+      1. Extension Init -
+      2. Runtime Init
+      3. Function Init
+  - Invoke Phase: Executes the function
+    - The invoke phase is split into three sub-phases:
+    1. Function Invoke
+    2. Function Execute
+    3. Function Return
+  - Shutdown Phase: Cleans up resources
+    1. Runtime Shutdown
+    2. Extension Shutdown
+  - Cold Start: Environment is initialized from scratch
+  - Warm Start: Environment is reused
+    - To improve resource management and performance, Lambda retains the execution environment for a period of time. During this time, if another request arrives for the same function, Lambda can reuse the environment.
 
 **Exercise:**
 
