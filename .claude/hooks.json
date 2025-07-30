@@ -1,0 +1,3 @@
+{
+  "post-tool-call": "osascript -e 'display notification \"Claude command completed\" with title \"Claude Code\"'"
+}

@@ -1,5 +1,3 @@
 {
-  "enabledMcpjsonServers": [
-    "Context7"
-  ]
+  "enabledMcpjsonServers": ["Context7"]
 }
