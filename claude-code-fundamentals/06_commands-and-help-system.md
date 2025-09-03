@@ -31,25 +31,6 @@ claude update
 claude --version
 ```
 
-### Session Management
-
-```bash
-# List sessions
-claude sessions list
-
-# Show session details
-claude sessions show "name"
-
-# Export session
-claude sessions export "name" > session.md
-
-# Delete session
-claude sessions delete "name"
-
-# Clear all sessions
-claude sessions clear
-```
-
 ### Configuration Commands
 
 ```bash
